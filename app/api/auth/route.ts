@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { users } from '../../data/page'
+import { users } from '@data/page'
 
 async function authenticateUser(email: string, password: string) {
     const user = users.find(u => u.email === email && u.password === password)
