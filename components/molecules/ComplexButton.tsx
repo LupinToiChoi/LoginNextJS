@@ -1,5 +1,5 @@
-import { Label, LabelProps } from "./Label";
-import { Button, ButtonProps } from "./Button";
+import { Label, LabelProps } from "../atoms/Label";
+import { Button, ButtonProps } from "../atoms/Button";
 interface ComplexButtonProps {
     labelProps: LabelProps;
     buttonProps: ButtonProps;

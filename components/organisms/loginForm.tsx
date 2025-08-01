@@ -4,8 +4,8 @@ import { Input } from '@/components/atoms/Input'
 import { Message } from '@/components/atoms/Message'
 import { Label } from '@/components/atoms/Label';
 import Link from 'next/link';
-import { ComplexInput } from '../atoms/ComplexInput';
-import { ComplexButton } from '../atoms/ComplexButton';
+import { ComplexInput } from '../molecules/ComplexInput';
+import { ComplexButton } from '../molecules/ComplexButton';
 import { useUser } from '@/hooks/useUser';
 
 export function LoginForm() {
