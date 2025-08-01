@@ -1,15 +1,15 @@
 import { NextResponse } from 'next/server'
-import { users } from '@data/page'
+const users = [
+    { email: 'admin@gmail.com', password: '123456' }
+]
 
 async function authenticateUser(email: string, password: string) {
     const user = users.find(u => u.email === email && u.password === password)
     return user
 }
 
-export async function POST(request: Request) {
+export async function POST(email: string, password: string) {
     try {
-        const { email, password } = await request.json()
-
         if (!email || !password) {
             return NextResponse.json(
                 { error: 'Email and password are required.' },
