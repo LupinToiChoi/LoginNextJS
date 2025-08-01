@@ -1,4 +1,4 @@
-interface InputProps {
+export interface InputProps {
     id: string;
     name: string;
     type: 'text' | 'email' | 'password';
