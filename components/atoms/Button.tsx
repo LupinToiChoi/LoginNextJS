@@ -1,4 +1,4 @@
-interface ButtonProps {
+export interface ButtonProps {
     children: React.ReactNode;
     type?: 'submit' | 'button' | 'reset';
     onClick?: () => void;
@@ -19,5 +19,6 @@ export function Button({
         >
             {children}
         </button>
+
     );
 }
